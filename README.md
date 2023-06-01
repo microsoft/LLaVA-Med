@@ -58,7 +58,7 @@
 
 
 <p align="center">
-    <img src="images/llava_med_chat.png" width="90%"> <br>
+    <img src="images/llava_med_vqa.png" width="90%"> <br>
  
   *Performance comparison of fine-tuned LLaVA-Med on established Medical QVA datasets.*
 </p>
