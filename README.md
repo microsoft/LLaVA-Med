@@ -2,7 +2,7 @@
 
 *Visual instruction tuning towards buiding large language and vision models with GPT-4 level capabilities in the biomedicine space.*
 
-[[Paper](https://arxiv.org)] 
+[[Paper](https://arxiv.org/abs/2306.00890)] 
 
 <!-- [[Data](https://huggingface.co/datasets/liuhaotian/LLaVA-Instruct-150K)] [[Model](https://huggingface.co/liuhaotian/LLaVA-13b-delta-v0)] -->
 
@@ -19,7 +19,7 @@
 
 ## Release
 
-- [June 1] 🔥 We released **LLaVA-Med: Large Language and Vision Assistant for Biomedicine**, a step towards building biomedical domain large language and vision models with GPT-4 level capabilities.  Checkout the [paper](https://arxiv.org/abs/2304.08485)
+- [June 1] 🔥 We released **LLaVA-Med: Large Language and Vision Assistant for Biomedicine**, a step towards building biomedical domain large language and vision models with GPT-4 level capabilities.  Checkout the [paper](https://arxiv.org/abs/2306.00890)
 
 <p align="center">
     <img src="images/llava_med_pipeline.png" width="90%"> <br>
