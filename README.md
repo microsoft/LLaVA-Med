@@ -58,7 +58,7 @@
 <p align="center">
     <img src="images/llava_med_chat_example2.png" width="90%"> <br>
  
-  *Example 2: comparison of medical visual chat. LLaVA tends to halluciate or refuse to provide domain-specific knowledgable response.*
+  *Example 2: comparison of medical visual chat. LLaVA tends to hallucinate or refuse to provide domain-specific knowledgable response.*
 </p>
 
 
