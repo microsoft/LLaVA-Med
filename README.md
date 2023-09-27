@@ -50,29 +50,28 @@
 </p>
 
 ### Data Download
-| Image files | Size |
-| --- | ---: |
-| [images.zip](https://hanoverprod.blob.core.windows.net/public/med_llava/images.zip?sv=2021-10-04&st=2023-08-21T06%3A35%3A05Z&se=2024-02-22T07%3A35%3A00Z&sr=c&sp=rl&sig=nB35sBICKkq1uJoeUqf524GLGUiLG16sUISgIJ%2BsNXc%3D) | 47.62 GiB |
-
 | Alignment data files | Size |
 | --- | ---: |
-| [llava_med_alignment_500k.json](https://hanoverprod.blob.core.windows.net/public/med_llava/alignment/llava_med_alignment_500k.json?sv=2021-10-04&st=2023-08-21T06%3A35%3A05Z&se=2024-02-22T07%3A35%3A00Z&sr=c&sp=rl&sig=nB35sBICKkq1uJoeUqf524GLGUiLG16sUISgIJ%2BsNXc%3D) | 341.52 MiB |
-| [llava_med_alignmnet_image_urls.jsonl](https://hanoverprod.blob.core.windows.net/public/med_llava/alignment/llava_med_alignment_image_urls.jsonl?sv=2021-10-04&st=2023-08-21T06%3A35%3A05Z&se=2024-02-22T07%3A35%3A00Z&sr=c&sp=rl&sig=nB35sBICKkq1uJoeUqf524GLGUiLG16sUISgIJ%2BsNXc%3D) | 80.78 MiB |
+| [llava_med_alignment_500k.json](https://hanoverprod.z21.web.core.windows.net/med_llava/alignment/llava_med_alignment_500k.json) | 341.52 MiB |
 
 | Instruction-Tuning data files | Size |
 | --- | ---: |
-| [llava_med_instruct_10k.json](https://hanoverprod.blob.core.windows.net/public/med_llava/instruct/llava_med_instruct_10k.json?sv=2021-10-04&st=2023-08-21T06%3A35%3A05Z&se=2024-02-22T07%3A35%3A00Z&sr=c&sp=rl&sig=nB35sBICKkq1uJoeUqf524GLGUiLG16sUISgIJ%2BsNXc%3D) | 19.24 MiB |
-| [llava_med_instruct_60k.json](https://hanoverprod.blob.core.windows.net/public/med_llava/instruct/llava_med_instruct_60k.json?sv=2021-10-04&st=2023-08-21T06%3A35%3A05Z&se=2024-02-22T07%3A35%3A00Z&sr=c&sp=rl&sig=nB35sBICKkq1uJoeUqf524GLGUiLG16sUISgIJ%2BsNXc%3D) | 	84.65 MiB |
-| [llava_med_instruct_60k_inline_mention.json](https://hanoverprod.blob.core.windows.net/public/med_llava/instruct/llava_med_instruct_60k_inline_mention.json?sv=2021-10-04&st=2023-08-21T06%3A35%3A05Z&se=2024-02-22T07%3A35%3A00Z&sr=c&sp=rl&sig=nB35sBICKkq1uJoeUqf524GLGUiLG16sUISgIJ%2BsNXc%3D) | 83.61 MiB |
-| [llava_med_instruct_fig_captions.json](https://hanoverprod.blob.core.windows.net/public/med_llava/instruct/llava_med_instruct_fig_captions.json?sv=2021-10-04&st=2023-08-21T06%3A35%3A05Z&se=2024-02-22T07%3A35%3A00Z&sr=c&sp=rl&sig=nB35sBICKkq1uJoeUqf524GLGUiLG16sUISgIJ%2BsNXc%3D) | 161.39 MiB |
-| [llava_med_instruct_image_urls.jsonl](https://hanoverprod.blob.core.windows.net/public/med_llava/instruct/llava_med_instruct_image_urls.jsonl?sv=2021-10-04&st=2023-08-21T06%3A35%3A05Z&se=2024-02-22T07%3A35%3A00Z&sr=c&sp=rl&sig=nB35sBICKkq1uJoeUqf524GLGUiLG16sUISgIJ%2BsNXc%3D) | 9.89 MiB |
+| [llava_med_instruct_10k.json](https://hanoverprod.z21.web.core.windows.net/med_llava/instruct/llava_med_instruct_10k.json) | 19.24 MiB |
+| [llava_med_instruct_60k.json](https://hanoverprod.z21.web.core.windows.net/med_llava/instruct/llava_med_instruct_60k.json) | 	84.65 MiB |
+| [llava_med_instruct_60k_inline_mention.json](https://hanoverprod.z21.web.core.windows.net/med_llava/instruct/llava_med_instruct_60k_inline_mention.json) | 83.61 MiB |
+| [llava_med_instruct_fig_captions.json](https://hanoverprod.z21.web.core.windows.net/med_llava/instruct/llava_med_instruct_fig_captions.json) | 161.39 MiB |
 
 | Evaluation files | Size |
 | --- | ---: |
-| [llava_med_eval_qa50_qa.jsonl](https://hanoverprod.blob.core.windows.net/public/med_llava/eval/llava_med_eval_qa50_qa.jsonl?sv=2021-10-04&st=2023-08-21T06%3A35%3A05Z&se=2024-02-22T07%3A35%3A00Z&sr=c&sp=rl&sig=nB35sBICKkq1uJoeUqf524GLGUiLG16sUISgIJ%2BsNXc%3D) | 	256.18 KiB |
-| [llava_med_eval_qa50_fig_captions.json](https://hanoverprod.blob.core.windows.net/public/med_llava/eval/llava_med_eval_qa50_fig_captions.json?sv=2021-10-04&st=2023-08-21T06%3A35%3A05Z&se=2024-02-22T07%3A35%3A00Z&sr=c&sp=rl&sig=nB35sBICKkq1uJoeUqf524GLGUiLG16sUISgIJ%2BsNXc%3D) | 51.82 KiB |
-| [llava_med_qa50_instruct_caption_in_text_cleaned-60k-3epoch.json](https://hanoverprod.blob.core.windows.net/public/med_llava/eval/llava_med_qa50_instruct_caption_in_text_cleaned-60k-3epoch.json?sv=2021-10-04&st=2023-08-21T06%3A35%3A05Z&se=2024-02-22T07%3A35%3A00Z&sr=c&sp=rl&sig=nB35sBICKkq1uJoeUqf524GLGUiLG16sUISgIJ%2BsNXc%3D) | 100.97 KiB |
-| [llava_med_eval_qa50_image_urls.jsonl](https://hanoverprod.blob.core.windows.net/public/med_llava/eval/llava_med_eval_qa50_image_urls.jsonl?sv=2021-10-04&st=2023-08-21T06%3A35%3A05Z&se=2024-02-22T07%3A35%3A00Z&sr=c&sp=rl&sig=nB35sBICKkq1uJoeUqf524GLGUiLG16sUISgIJ%2BsNXc%3D) |  8.53 KiB |
+| [llava_med_eval_qa50_qa.jsonl](https://hanoverprod.z21.web.core.windows.net/med_llava/eval/llava_med_eval_qa50_qa.jsonl) | 	256.18 KiB |
+| [llava_med_eval_qa50_fig_captions.json](https://hanoverprod.z21.web.core.windows.net/med_llava/eval/llava_med_eval_qa50_fig_captions.json) | 51.82 KiB |
+| [llava_med_qa50_instruct_caption_in_text_cleaned-60k-3epoch.json](https://hanoverprod.z21.web.core.windows.net/med_llava/eval/llava_med_qa50_instruct_caption_in_text_cleaned-60k-3epoch.json) | 100.97 KiB |
+
+| Image URLS | Size |
+| --- | ---: |
+| [llava_med_image_urls.jsonl](https://hanoverprod.z21.web.core.windows.net/med_llava/llava_med_image_urls.jsonl) | 122.82 MiB |
+
+[download_images.py](llava/data/download_images.py) is used to download the PMC articles using the above image_urls file and extract the images
 
 To download our langauge-image multimodal instruction-folllowing dataset, please run the following script:
 ```bash
@@ -81,11 +80,11 @@ sh download_data.sh
 
 ### GPT-4 Assisted Instruct Data Generation
 
-We provide our prompts and few-shot samples for GPT-4 queries, to better facilitate research in this domain.  Please check out the [`llava/instruct/`](llava/instruct/) folder for the instruct data [generation](/llava/instruct/instruct_generate.py) and [filtering](llava/instruct/instruct_postprocess.py).
+We provide our prompts and few-shot samples for GPT-4 queries, to better facilitate research in this domain.  Please check out the [`llava/instruct/`](llava/instruct/) folder for the instruct data [generation](llava/instruct/instruct_generate.py) and [filtering](llava/instruct/instruct_postprocess.py).
 
 To generate medical instruction tuning for 60k samples and with in-text mentions:
 
-Fill in your OpenAI API parameters in the file llava/openai_api.py:
+Fill in your OpenAI API parameters in the file [llava/openai_api.py](llava/openai_api.py):
 ```Shell
 openai.api_type = "azure"
 openai.api_key = '...'
@@ -99,7 +98,7 @@ Generate visual instruct tuning conversations using GPT-4
 python llava/instruct/instruct_generate.py \
     --input_path data/instruct/llava_med_instruct_fig_captions.json \
     --output_path data/instruct/llava_med_instruct_60k_inline_mentions_gen.jsonl \
-    --max_size 60000 \
+    --max-size 60000 \
     --use_inline_mentions True
 ```
 
@@ -252,14 +251,14 @@ torchrun --nnodes=1 --nproc_per_node=8 --master_port=25001 \
     --report_to wandb
 ```
 
-You may directly perform medical instruction tuning on [`medical instruct data`](https://hanoverprod.blob.core.windows.net/public/med_llava/instruct/llava_med_instruct_60k_inline_mention.json?sv=2021-10-04&st=2023-08-21T06%3A35%3A05Z&se=2024-02-22T07%3A35%3A00Z&sr=c&sp=rl&sig=nB35sBICKkq1uJoeUqf524GLGUiLG16sUISgIJ%2BsNXc%3D), by skipping Stage 1, and replacing Stage-1 checkpoint with the pretrained LLaVA checkpoint (LLaVA-7b-v0). Please see an example running script at [`run_training_llava_med.sh`](scripts/chunyl/run_training_llava_med.sh)
+You may directly perform medical instruction tuning on [`medical instruct data`](https://hanoverprod.z21.web.core.windows.net/med_llava/instruct/llava_med_instruct_60k_inline_mention.json), by skipping Stage 1, and replacing Stage-1 checkpoint with the pretrained LLaVA checkpoint (LLaVA-7b-v0). Please see an example running script at [`run_training_llava_med.sh`](scripts/chunyl/run_training_llava_med.sh)
 
 
 ## Serving
 
 | Model Checkpoints | Size |
 | --- | ---: |
-| [LLaVA-Med-7B (Trained on 60k instruct data with inline mentions)](https://hanoverprod.blob.core.windows.net/public/med_llava/models/finetune_e2e_on_instruct_caption_in_text_cleaned-60k-3epoch.zip?sv=2021-10-04&st=2023-08-21T06%3A35%3A05Z&se=2024-02-22T07%3A35%3A00Z&sr=c&sp=rl&sig=nB35sBICKkq1uJoeUqf524GLGUiLG16sUISgIJ%2BsNXc%3D) | 52.08 GiB |
+| [LLaVA-Med-7B (Trained on 60k instruct data with inline mentions)](https://hanoverprod.z21.web.core.windows.net/med_llava/models/finetune_e2e_on_instruct_caption_in_text_cleaned-60k-3epoch.zip) | 52.08 GiB |
 
 ### Web UI
 
