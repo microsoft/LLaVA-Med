@@ -45,7 +45,7 @@ class PromptGenerator:
   def context_gen(sample, use_inline_mentions=True):
     ctx = []
     if use_inline_mentions and sample["in_text_mention"]:
-      for sent in ex["in_text_mention"]:
+      for sent in sample["in_text_mention"]:
         if isinstance(sent, dict):
           sent = sent["tokens"]
         ctx.append(sent)
