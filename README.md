@@ -133,7 +133,8 @@ pip install --upgrade pip  # enable PEP 660 support
 
 ```Shell
 pip uninstall torch torchvision -y
-pip install torch==2.0.0+cu117 torchvision==0.15.1+cu117 torchaudio==2.0.1 openai==0.27.8 --index-url https://download.pytorch.org/whl/cu117
+pip install torch==2.0.0+cu117 torchvision==0.15.1+cu117 torchaudio==2.0.1 --index-url https://download.pytorch.org/whl/cu117
+pip install openai==0.27.8
 pip uninstall transformers -y
 pip install git+https://github.com/huggingface/transformers@cae78c46
 pip install -e .
