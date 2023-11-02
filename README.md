@@ -38,6 +38,7 @@
 - [Training](#training)
 - [Serving](#serving)
 - [Evaluation](#evaluation)
+- [Model Description](#model-description)
 
 ## Data Download
 
@@ -421,6 +422,29 @@ python llava/eval/run_eval.py \
 ```
 
 Please find the LLaVA-Med performance in [llava_med_performance.md](docs/llava_med_performance.md) or in the paper.
+
+
+## Model Description 
+
+Large Language and Vision Assistant for bioMedicine (i.e., “LLaVA-Med”) is a large language and vision model trained using a curriculum learning method for adapting LLaVA to the biomedical domain. It is an open-source release intended for research use only to facilitate reproducibility of the corresponding paper  which claims improved performance for open-ended biomedical questions answering tasks, including common visual question answering (VQA) benchmark datasets such as PathVQA and VQA-RAD. 
+
+### Model Uses 
+
+#### Intended Use 
+The data, code, and model checkpoints are intended to be used solely for (I) future research on visual-language processing and (II) reproducibility of the experimental results reported in the reference paper. The data, code, and model checkpoints are not intended to be used in clinical care or for any clinical decision making purposes. 
+
+#### Primary Intended Use 
+The primary intended use is to support AI researchers reproducing and building on top of this work. LLaVA-Med and its associated models should be helpful for exploring various biomedical vision-language processing (VLP ) and vision question answering (VQA) research questions. 
+
+#### Out-of-Scope Use 
+**Any** deployed use case of the model --- commercial or otherwise --- is out of scope. Although we evaluated the models using a broad set of publicly-available research benchmarks, the models and evaluations are intended *for research use only* and not intended for deployed use cases. Please refer to [the associated paper](https://aka.ms/llava-med) for more details. 
+
+### Data 
+This model builds upon [PMC-15M dataset](https://aka.ms/biomedclip-paper), which is a large-scale parallel image-text dataset for biomedical vision-language processing. It contains 15 million figure-caption pairs extracted from biomedical research articles in PubMed Central. It covers a diverse range of biomedical image types, such as microscopy, radiography, histology, and more. 
+
+### Limitations 
+This model was developed using English corpora, and thus may be considered English-only. This model is evaluated on a narrow set of biomedical benchmark tasks, described in [LLaVA-Med paper](https://aka.ms/llava-med). As such, it is not suitable for use in any clinical setting. Under some conditions, the model may make inaccurate predictions and display limitations, which may require additional mitigation strategies. In particular, this model is likely to carry many of the limitations of the model from which it is derived, [LLaVA](https://llava-vl.github.io/). 
+
 
 ## Acknowledgement
 
