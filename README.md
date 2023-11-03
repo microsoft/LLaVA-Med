@@ -443,7 +443,9 @@ The primary intended use is to support AI researchers reproducing and building o
 This model builds upon [PMC-15M dataset](https://aka.ms/biomedclip-paper), which is a large-scale parallel image-text dataset for biomedical vision-language processing. It contains 15 million figure-caption pairs extracted from biomedical research articles in PubMed Central. It covers a diverse range of biomedical image types, such as microscopy, radiography, histology, and more. 
 
 ### Limitations 
-This model was developed using English corpora, and thus may be considered English-only. This model is evaluated on a narrow set of biomedical benchmark tasks, described in [LLaVA-Med paper](https://aka.ms/llava-med). As such, it is not suitable for use in any clinical setting. Under some conditions, the model may make inaccurate predictions and display limitations, which may require additional mitigation strategies. In particular, this model is likely to carry many of the limitations of the model from which it is derived, [LLaVA](https://llava-vl.github.io/). 
+This model was developed using English corpora, and thus may be considered English-only. This model is evaluated on a narrow set of biomedical benchmark tasks, described in [LLaVA-Med paper](https://aka.ms/llava-med). As such, it is not suitable for use in any clinical setting. Under some conditions, the model may make inaccurate predictions and display limitations, which may require additional mitigation strategies. In particular, this model is likely to carry many of the limitations of the model from which it is derived, [LLaVA](https://llava-vl.github.io/).
+
+Further, this model was developed in part using the [PMC-15M](https://aka.ms/biomedclip-paper) dataset. The figure-caption pairs that make up this dataset may contain biases reflecting the current practice of academic publication. For example, the corresponding papers may be enriched for positive findings, contain examples of extreme cases, and otherwise reflect distributions that are not representative of other sources of biomedical data. 
 
 
 ## Acknowledgement
