@@ -27,7 +27,7 @@
   *LLaVA-Med was initialized with the general-domain LLaVA and then continuously trained in a curriculum learning fashion (first biomedical concept alignment then full-blown instruction-tuning). We evaluated LLaVA-Med on standard visual conversation and question answering tasks.*
 </p>
 
-[![Code License](https://img.shields.io/badge/Code%20License-Microsoft%20Research-red)](https://github.com/tatsu-lab/stanford_alpaca/blob/main/LICENSE)
+[![Code License](https://img.shields.io/badge/Code%20License-Microsoft%20Research-red)](Research%20License.docx)
 [![Data License](https://img.shields.io/badge/Data%20License-CC%20By%20NC%204.0-red.svg)](https://github.com/tatsu-lab/stanford_alpaca/blob/main/DATA_LICENSE)
 **Usage and License Notices**: The data, code, and model checkpoints are intended and licensed for research use only. They are also subject to additional restrictions dictated by the Terms of Use: LLaMA, Vicuna and GPT-4 respectively. The data is made available under CC BY NC 4.0. The data, code, and model checkpoints may be used for non-commercial purposes and any models trained using the dataset should be used only for research purposes. It is expressly prohibited for models trained on this data to be used in clinical care or for any clinical decision making purposes.
 
@@ -260,7 +260,6 @@ You may directly perform medical instruction tuning on [`medical instruct data`]
 
 | Model Checkpoints | Size |
 | --- | ---: |
-| [LLaVA-Med-7B (Trained on 60k instruct data with inline mentions)](https://hanoverprod.z21.web.core.windows.net/med_llava/models/finetune_e2e_on_instruct_caption_in_text_cleaned-60k-3epoch.zip) | 52.08 GiB |
 
 ### Web UI
 
