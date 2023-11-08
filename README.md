@@ -258,15 +258,17 @@ You may directly perform medical instruction tuning on [`medical instruct data`]
 
 ## Serving
 
-| Model Checkpoints | Size |
+| Model Delta Weights | Size |
 | --- | ---: |
+| [llava_med_in_text_60k_delta.zip](https://hanoverprod.z21.web.core.windows.net/med_llava/models/llava_med_in_text_60k_delta.zip) | 11.06 GB |
 
 The model weights above are *delta* weights. The usage of LLaVA-Med checkpoints should comply with the base LLM's model license: [LLaMA](https://github.com/facebookresearch/llama/blob/main/MODEL_CARD.md).
 
 Instructions:
 
+1. Download the delta weights [llava_med_in_text_60k_delta.zip](https://hanoverprod.z21.web.core.windows.net/med_llava/models/llava_med_in_text_60k_delta.zip) and unzip.
 1. Get the original LLaMA weights in the huggingface format by following the instructions [here](https://huggingface.co/docs/transformers/main/model_doc/llama).
-2. Use the following scripts to get LLaVA-Med weights by applying our delta. It will automatically download delta weights from our Hugging Face account. In the script below, we use the delta weights of `llava_med_in_text_60k_delta` as an example. It can be adapted for other delta weights by changing the `--delta` argument (and base/target accordingly).
+1. Use the following scripts to get LLaVA-Med weights by applying our delta. In the script below, set the --delta argument to the path of the unzipped `llava_med_in_text_60k_delta` directory. It can be adapted for other delta weights by changing the `--delta` argument (and base/target accordingly).
 
 ```bash
 python3 -m llava.model.apply_delta \
