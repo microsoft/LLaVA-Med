@@ -1,0 +1,9 @@
+/home/chunyl/research/output/llava/results/eval/vqa_rad/answer-file-llava-zeorshot.jsonl
+/home/chunyl/azure_mount/chunyleu_output/llava-med/llava-vicuna-7b/llava-vicuna-7b-pretrain_cc3m_595k_1e-instruct_158k-3epoch/eval/zero-shot/vqa_rad/test-answer-file.jsonl
+/home/chunyl/azure_mount/chunyleu_output/llava-med/llava-vicuna-7b/med-pretrain-364m-1epoch/finetune_results/vqa_rad-1epoch/test-answer-file.jsonl
+/home/chunyl/azure_mount/chunyleu_output/llava-med/llava-vicuna-7b/med-pretrain-364m-1epoch/finetune_results/vqa_rad-1epoch/test-answer-file.jsonl
+/home/chunyl/azure_mount/chunyleu_output/llava-med/llava-vicuna-7b/med-pretrain-364m-3epoch/finetune_results/vqa_rad-1epoch/test-answer-file.jsonl
+/home/chunyl/azure_mount/chunyleu_output/llava-med/llava-vicuna-7b/med-pretrain-364m-1epoch/finetune_e2e_on_instruct-3epoch/finetune_to_downstream_results/vqa_rad-1epoch/test-answer-file.jsonl
+/home/chunyl/azure_mount/chunyleu_output/llava-med/llava-vicuna-7b/med-pretrain-364m-1epoch/finetune_e2e_on_instruct-3epoch/finetune_to_downstream_results/vqa_rad-3epoch/test-answer-file.jsonl
+/home/chunyl/azure_mount/chunyleu_output/llava-med/llava-vicuna-7b/med-pretrain-364m-1epoch/zeroshot_to_downstream_results/vqa_rad/test-answer-file.jsonl
+/home/chunyl/azure_mount/chunyleu_output/llava-med/llava-vicuna-7b/med-pretrain-364m-1epoch/finetune_e2e_on_instruct-3epoch/zeroshot_to_downstream_results/vqa_rad/test-answer-file.jsonl
