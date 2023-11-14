@@ -1,6 +1,6 @@
 # LLaVA-Med: Large Language and Vision Assistant for BioMedicine
 
-*Visual instruction tuning towards buiding large language and vision models with GPT-4 level capabilities in the biomedicine space.*
+*Visual instruction tuning towards building large language and vision models with GPT-4 level capabilities in the biomedicine space.*
 
 [[Paper, NeurIPS 2023 Datasets and Benchmarks Track (Spotlight)](https://arxiv.org/abs/2306.00890)] 
 
