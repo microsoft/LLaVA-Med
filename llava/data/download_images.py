@@ -4,6 +4,7 @@ import shutil
 from tqdm import tqdm
 import tarfile
 import argparse
+from urllib.error import HTTPError
 import urllib.request
 
 
@@ -15,8 +16,13 @@ def main(args):
 
   # Download all PMC articles
   print('Downloading PMC articles')
-  for sample in tqdm(input_data):
-    urllib.request.urlretrieve(sample['pmc_tar_url'], os.path.join(args.pmc_output_path, os.path.basename(sample['pmc_tar_url'])))
+  for idx, sample in enumerate(tqdm(input_data)):
+    try:
+      urllib.request.urlretrieve(sample['pmc_tar_url'], os.path.join(args.pmc_output_path, os.path.basename(sample['pmc_tar_url'])))
+    except HTTPError as e:
+      print('Error downloading PMC article: {}'.format(sample['pmc_tar_url']))
+      continue
+
 
   # Untar all PMC articles
   print('Untarring PMC articles')
