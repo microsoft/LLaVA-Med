@@ -37,6 +37,7 @@
 - [Data Download](#data-download)
 - [Install](#install)
 - [Training](#training)
+- [Model Download](#model-download)
 - [Serving](#serving)
 - [Evaluation](#evaluation)
 - [Model Description](#model-description)
@@ -257,27 +258,33 @@ torchrun --nnodes=1 --nproc_per_node=8 --master_port=25001 \
 You may directly perform medical instruction tuning on [`medical instruct data`](https://hanoverprod.z21.web.core.windows.net/med_llava/instruct/llava_med_instruct_60k_inline_mention.json), by skipping Stage 1, and replacing Stage-1 checkpoint with the pretrained LLaVA checkpoint (LLaVA-7b-v0). Please see an example running script at [`run_training_llava_med.sh`](scripts/chunyl/run_training_llava_med.sh)
 
 
-## Serving
+## Model Download
 
-| Model Delta Weights | Size |
-| --- | ---: |
-| [llava_med_in_text_60k_delta.zip](https://hanoverprod.z21.web.core.windows.net/med_llava/models/llava_med_in_text_60k_delta.zip) | 11.06 GB |
+The model weights below are *delta* weights. The usage of LLaVA-Med checkpoints should comply with the base LLM's model license: [LLaMA](https://github.com/facebookresearch/llama/blob/main/MODEL_CARD.md).
 
-The model weights above are *delta* weights. The usage of LLaVA-Med checkpoints should comply with the base LLM's model license: [LLaMA](https://github.com/facebookresearch/llama/blob/main/MODEL_CARD.md).
+We provide delta weights for LLaVA-Med and 3 LLaVA-Med models each finetuned on the 3 VQA datasets:
+
+ Model Descriptions | Model Delta Weights | Size |
+| --- | --- | ---: |
+| LLaVA-Med | [llava_med_in_text_60k_ckpt2_delta.zip](https://hanoverprod.z21.web.core.windows.net/med_llava/models/llava_med_in_text_60k_ckpt2_delta.zip) | 11.06 GB |
+| LLaVA-Med PathVQA-finetuned | [pvqa-9epoch_delta.zip](https://hanoverprod.z21.web.core.windows.net/med_llava/models/pvqa-9epoch_delta.zip) | 11.06 GB |
+| LLaVA-Med VQA-RAD-finetuned | [data_RAD-9epoch_delta.zip](https://hanoverprod.z21.web.core.windows.net/med_llava/models/data_RAD-9epoch_delta.zip) | 11.06 GB |
+| LLaVA-Med SLAKE-finetuned | [Slake1.0-9epoch_delta.zip](https://hanoverprod.z21.web.core.windows.net/med_llava/models/Slake1.0-9epoch_delta.zip) | 11.06 GB |
 
 Instructions:
 
-1. Download the delta weights [llava_med_in_text_60k_delta.zip](https://hanoverprod.z21.web.core.windows.net/med_llava/models/llava_med_in_text_60k_delta.zip) and unzip.
+1. Download the delta weights above and unzip.
 1. Get the original LLaMA weights in the huggingface format by following the instructions [here](https://huggingface.co/docs/transformers/main/model_doc/llama).
-1. Use the following scripts to get LLaVA-Med weights by applying our delta. In the script below, set the --delta argument to the path of the unzipped `llava_med_in_text_60k_delta` directory. It can be adapted for other delta weights by changing the `--delta` argument (and base/target accordingly).
+1. Use the following scripts to get original LLaVA-Med weights by applying our delta. In the script below, set the --delta argument to the path of the unzipped delta weights directory from step 1.
 
 ```bash
 python3 -m llava.model.apply_delta \
     --base /path/to/llama-7b \
-    --target /output/path/to/llava_med_in_text_60k \
-    --delta path/to/llava_med_in_text_60k_delta
+    --target /output/path/to/llava_med_model \
+    --delta /path/to/llava_med_delta_weights
 ```
 
+## Serving
 
 ### Web UI
 
