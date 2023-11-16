@@ -263,7 +263,7 @@ You may directly perform medical instruction tuning on [`medical instruct data`]
 
 The model weights below are *delta* weights. The usage of LLaVA-Med checkpoints should comply with the base LLM's model license: [LLaMA](https://github.com/facebookresearch/llama/blob/main/MODEL_CARD.md).
 
-We provide delta weights for LLaVA-Med, the LLaVA-Med checkpoint used for finetuning (used to compare zero-shot evaluation results), and 3 LLaVA-Med models finetuned on the VQA datasets:
+We provide delta weights for LLaVA-Med, the LLaVA-Med checkpoint used for finetuning (used for VQA zero-shot evaluation), and 3 LLaVA-Med models finetuned on the VQA datasets:
 
  Model Descriptions | Model Delta Weights | Size |
 | --- | --- | ---: |
