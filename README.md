@@ -262,12 +262,11 @@ You may directly perform medical instruction tuning on [`medical instruct data`]
 
 The model weights below are *delta* weights. The usage of LLaVA-Med checkpoints should comply with the base LLM's model license: [LLaMA](https://github.com/facebookresearch/llama/blob/main/MODEL_CARD.md).
 
-We provide delta weights for LLaVA-Med, the LLaVA-Med checkpoint used for finetuning (used for VQA zero-shot evaluation), and 3 LLaVA-Med models finetuned on the VQA datasets:
+We provide delta weights for LLaVA-Med and 3 LLaVA-Med models each finetuned on the 3 VQA datasets:
 
  Model Descriptions | Model Delta Weights | Size |
 | --- | --- | ---: |
-| LLaVA-Med | [llava_med_in_text_60k_delta.zip](https://hanoverprod.z21.web.core.windows.net/med_llava/models/llava_med_in_text_60k_delta.zip) | 11.06 GB |
-| LLaVA-Med Checkpoint for VQA finetuning. <br>Used for zero-shot VQA evaluation | [llava_med_in_text_60k_ckpt2_delta](https://hanoverprod.z21.web.core.windows.net/med_llava/models/llava_med_in_text_60k_ckpt2_delta.zip) | 11.06 GB |
+| LLaVA-Med | [llava_med_in_text_60k_ckpt2_delta](https://hanoverprod.z21.web.core.windows.net/med_llava/models/llava_med_in_text_60k_ckpt2_delta.zip) | 11.06 GB |
 | PathVQA-finetuned model | [pvqa-9epoch_delta.zip](https://hanoverprod.z21.web.core.windows.net/med_llava/models/pvqa-9epoch_delta.zip) | 11.06 GB |
 | VQA-RAD-finetuned model | [data_RAD-9epoch_delta.zip](https://hanoverprod.z21.web.core.windows.net/med_llava/models/data_RAD-9epoch_delta.zip) | 11.06 GB |
 | SLAKE-finetuned model | [Slake1.0-9epoch_delta.zip](https://hanoverprod.z21.web.core.windows.net/med_llava/models/Slake1.0-9epoch_delta.zip) | 11.06 GB |
