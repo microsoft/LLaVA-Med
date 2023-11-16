@@ -1,6 +1,6 @@
 # LLaVA-Med: Large Language and Vision Assistant for BioMedicine
 
-*Visual instruction tuning towards buiding large language and vision models with GPT-4 level capabilities in the biomedicine space.*
+*Visual instruction tuning towards building large language and vision models with GPT-4 level capabilities in the biomedicine space.*
 
 [[Paper, NeurIPS 2023 Datasets and Benchmarks Track (Spotlight)](https://arxiv.org/abs/2306.00890)] 
 
@@ -165,7 +165,6 @@ python3 -m llava.model.apply_delta \
     --target /output/path/to/LLaVA-7b-v0 \
     --delta /huggingface.co/liuhaotian/LLaVA-7b-delta-v0
 ```
-
 
 ### LLaVA-Med Training
 LLaVA-Med is trained on 8 A100 GPUs with 40GB memory with the following code. To train on fewer GPUs, you can reduce the `per_device_train_batch_size` and increase the `gradient_accumulation_steps` accordingly to keep the global batch size the same.
