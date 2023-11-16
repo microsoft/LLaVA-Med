@@ -267,9 +267,9 @@ We provide delta weights for LLaVA-Med and 3 LLaVA-Med models each finetuned on 
  Model Descriptions | Model Delta Weights | Size |
 | --- | --- | ---: |
 | LLaVA-Med | [llava_med_in_text_60k_ckpt2_delta](https://hanoverprod.z21.web.core.windows.net/med_llava/models/llava_med_in_text_60k_ckpt2_delta.zip) | 11.06 GB |
-| PathVQA-finetuned model | [pvqa-9epoch_delta.zip](https://hanoverprod.z21.web.core.windows.net/med_llava/models/pvqa-9epoch_delta.zip) | 11.06 GB |
-| VQA-RAD-finetuned model | [data_RAD-9epoch_delta.zip](https://hanoverprod.z21.web.core.windows.net/med_llava/models/data_RAD-9epoch_delta.zip) | 11.06 GB |
-| SLAKE-finetuned model | [Slake1.0-9epoch_delta.zip](https://hanoverprod.z21.web.core.windows.net/med_llava/models/Slake1.0-9epoch_delta.zip) | 11.06 GB |
+| PathVQA-finetuned LLaVA-Med | [pvqa-9epoch_delta.zip](https://hanoverprod.z21.web.core.windows.net/med_llava/models/pvqa-9epoch_delta.zip) | 11.06 GB |
+| VQA-RAD-finetuned LLaVA-Med | [data_RAD-9epoch_delta.zip](https://hanoverprod.z21.web.core.windows.net/med_llava/models/data_RAD-9epoch_delta.zip) | 11.06 GB |
+| SLAKE-finetuned LLaVA-Med | [Slake1.0-9epoch_delta.zip](https://hanoverprod.z21.web.core.windows.net/med_llava/models/Slake1.0-9epoch_delta.zip) | 11.06 GB |
 
 Instructions:
 
