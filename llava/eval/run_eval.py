@@ -91,6 +91,8 @@ def evaluate(gt, pred, candidate, criterion=None):
             if 'yes' in pred_value or 'no' in pred_value:
                 if gt_value in pred_value:
                     closed_scores['hit'].append(1)
+                else:
+                    closed_scores['hit'].append(0)
             else:
                 closed_scores['hit'].append(0)
     
