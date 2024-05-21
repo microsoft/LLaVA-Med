@@ -3,8 +3,8 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "llava"
-version = "0.1.0"
+name = "llava_med"
+version = "1.5.0"
 description = "Towards GPT-4 like large language and visual assistant."
 readme = "README.md"
 requires-python = ">=3.8"
@@ -13,10 +13,46 @@ classifiers = [
     "License :: OSI Approved :: Apache Software License",
 ]
 dependencies = [
-    "accelerate", "fastapi", "gradio==3.23", "markdown2[all]", "numpy",
-    "requests", "sentencepiece", "tokenizers==0.12.1",
-    "torch", "torchvision", "uvicorn", "wandb",
-    "transformers @ git+https://github.com/huggingface/transformers.git@cae78c46"
+    "transformers==4.36.2",
+    "tokenizers>=0.15.0",
+    "sentencepiece==0.1.99",
+    "shortuuid",
+    "accelerate==0.21.0",
+    "peft==0.4.0",
+    "bitsandbytes==0.41.0",
+    "pydantic<2,>=1",
+    "markdown2[all]",
+    "protobuf",
+    "numpy",
+    "scikit-learn==1.2.2",
+    "gradio==3.35.2",
+    "gradio_client==0.2.9",
+    "requests",
+    "httpx==0.24.0",
+    "uvicorn",
+    "fastapi",
+    "einops==0.6.1",
+    "einops-exts==0.0.4",
+    "timm==0.9.12",
+    "tiktoken",
+    "openai==1.12.0",
+    "backoff",
+]
+
+[project.optional-dependencies]
+train = ["deepspeed==0.9.5", "ninja", "wandb"]
+eval = [
+    "azure-ai-ml",
+    "datasets",
+    "fire",
+    "opencv-python",
+    "openpyxl==3.1.2",
+    "pillow==9.4.0",
+    "python-Levenshtein",
+    "rich",
+    "streamlit==1.29.0",
+    "typer[all]",
+    "word2number",
 ]
 
 [project.urls]
@@ -24,7 +60,39 @@ dependencies = [
 "Bug Tracker" = "https://github.com/microsoft/LLaVA-Med/issues"
 
 [tool.setuptools.packages.find]
-exclude = ["assets*", "benchmark*", "docs", "dist*", "playground*", "scripts*", "tests*"]
+exclude = [
+    "assets*",
+    "benchmark*",
+    "docs",
+    "dist*",
+    "playground*",
+    "scripts*",
+    "tests*",
+]
 
 [tool.wheel]
-exclude = ["assets*", "benchmark*", "docs", "dist*", "playground*", "scripts*", "tests*"]
+exclude = [
+    "assets*",
+    "benchmark*",
+    "docs",
+    "dist*",
+    "playground*",
+    "scripts*",
+    "tests*",
+]
+
+[tool.black]
+line-length = 120
+skip-string-normalization = true
+
+[tool.pyright]
+exclude = [
+    "**/__pycache__",
+    "playground",
+    "_results",
+    "_data",
+    "models",
+    "checkpoints",
+    "wandb",
+    "docs",
+]
