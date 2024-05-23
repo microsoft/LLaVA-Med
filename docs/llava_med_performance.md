@@ -1,12 +1,13 @@
-
-## LLaVA-Med Performance
+## LLaVA-Med-1.5 Performance
 
 <p align="center">
-    <img src="../images/llava_med_chat.png" width="90%"> <br>
+    <img src="https://hanoverprod.z21.web.core.windows.net/med_llava/web/llava-med_1.5_eval.png" width="90%"> <br>
  
   *Performance comparison of mulitmodal chat instruction-following abilities, measured by the relative score via language GPT-4 evaluation.*
 </p>
 
+
+## LLaVA-Med-1.0 Performance
 
 <p align="center">
     <img src="../images/llava_med_chat_example1.png" width="90%"> <br>
