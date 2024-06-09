@@ -199,7 +199,7 @@ python llava/eval/summarize_gpt_review.py \
 | --- | ---: |
 | [llava_med_image_urls.jsonl](https://hanoverprod.z21.web.core.windows.net/med_llava/llava_med_image_urls.jsonl) | 122.82 MiB |
 
-[download_images.py](llava/data/download_images.py) is used to download the PMC articles using the above image_urls file and extract the images
+[download_images.py](https://github.com/microsoft/LLaVA-Med/blob/v1.0.0/llava/data/download_images.py) is used to download the PMC articles using the above image_urls file and extract the images
 
 To download our langauge-image multimodal instruction-folllowing dataset, please run the following script:
 ```bash
