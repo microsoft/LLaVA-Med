@@ -1,0 +1,28 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="7">
+            <item index="0" class="java.lang.String" itemvalue="pandas" />
+            <item index="1" class="java.lang.String" itemvalue="beautifulsoup4" />
+            <item index="2" class="java.lang.String" itemvalue="allennlp_models" />
+            <item index="3" class="java.lang.String" itemvalue="python-Levenshtein" />
+            <item index="4" class="java.lang.String" itemvalue="allennlp" />
+            <item index="5" class="java.lang.String" itemvalue="lxml" />
+            <item index="6" class="java.lang.String" itemvalue="optuna" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N802" />
+          <option value="N806" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
