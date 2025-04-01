@@ -180,24 +180,24 @@ python llava/eval/summarize_gpt_review.py \
 ### Data Download
 | Alignment data files | Size |
 | --- | ---: |
-| [llava_med_alignment_500k.json](https://hanoverprod.z21.web.core.windows.net/med_llava/alignment/llava_med_alignment_500k.json) | 341.52 MiB |
+| [llava_med_alignment_500k.json](data/alignment/llava_med_alignment_500k.json) | 341.52 MiB |
 
 | Instruction-Tuning data files | Size |
 | --- | ---: |
-| [llava_med_instruct_10k.json](https://hanoverprod.z21.web.core.windows.net/med_llava/instruct/llava_med_instruct_10k.json) | 19.24 MiB |
-| [llava_med_instruct_60k.json](https://hanoverprod.z21.web.core.windows.net/med_llava/instruct/llava_med_instruct_60k.json) | 	84.65 MiB |
-| [llava_med_instruct_60k_inline_mention.json](https://hanoverprod.z21.web.core.windows.net/med_llava/instruct/llava_med_instruct_60k_inline_mention.json) | 83.61 MiB |
-| [llava_med_instruct_fig_captions.json](https://hanoverprod.z21.web.core.windows.net/med_llava/instruct/llava_med_instruct_fig_captions.json) | 161.39 MiB |
+| [llava_med_instruct_10k.json](data/instruct/llava_med_instruct_10k.json) | 19.24 MiB |
+| [llava_med_instruct_60k.json](data/instruct/llava_med_instruct_60k.json) | 	84.65 MiB |
+| [llava_med_instruct_60k_inline_mention.json](data/instruct/llava_med_instruct_60k_inline_mention.json) | 83.61 MiB |
+| [llava_med_instruct_fig_captions.json](data/instruct/llava_med_instruct_fig_captions.json) | 161.39 MiB |
 
 | Evaluation files | Size |
 | --- | ---: |
-| [llava_med_eval_qa50_qa.jsonl](https://hanoverprod.z21.web.core.windows.net/med_llava/eval/llava_med_eval_qa50_qa.jsonl) | 	256.18 KiB |
-| [llava_med_eval_qa50_fig_captions.json](https://hanoverprod.z21.web.core.windows.net/med_llava/eval/llava_med_eval_qa50_fig_captions.json) | 51.82 KiB |
-| [llava_med_qa50_instruct_caption_in_text_cleaned-60k-3epoch.json](https://hanoverprod.z21.web.core.windows.net/med_llava/eval/llava_med_qa50_instruct_caption_in_text_cleaned-60k-3epoch.json) | 100.97 KiB |
+| [llava_med_eval_qa50_qa.jsonl](data/eval/llava_med_eval_qa50_qa.jsonl) | 	256.18 KiB |
+| [llava_med_eval_qa50_fig_captions.json](data/eval/llava_med_eval_qa50_fig_captions.json) | 51.82 KiB |
+| [llava_med_qa50_instruct_caption_in_text_cleaned-60k-3epoch.json](data/eval/llava_med_qa50_instruct_caption_in_text_cleaned-60k-3epoch.json) | 100.97 KiB |
 
 | Image URLS | Size |
 | --- | ---: |
-| [llava_med_image_urls.jsonl](https://hanoverprod.z21.web.core.windows.net/med_llava/llava_med_image_urls.jsonl) | 122.82 MiB |
+| [llava_med_image_urls.jsonl](data/llava_med_image_urls.jsonl) | 122.82 MiB |
 
 [download_images.py](https://github.com/microsoft/LLaVA-Med/blob/v1.0.0/llava/data/download_images.py) is used to download the PMC articles using the above image_urls file and extract the images
 
