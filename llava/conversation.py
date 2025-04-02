@@ -411,7 +411,7 @@ conv_mistral_instruct = Conversation(
     messages=(),
     offset=0,
     sep_style=SeparatorStyle.LLAMA_2,
-    sep="",
+    sep="<s>",
     sep2="</s>",
 )
 
