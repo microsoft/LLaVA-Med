@@ -1,7 +1,6 @@
 from PIL import Image
 from io import BytesIO
 import base64
-import random
 import torch
 from transformers import StoppingCriteria
 from llava.constants import IMAGE_TOKEN_INDEX
@@ -17,15 +16,11 @@ def expand2square(pil_img, background_color):
         return pil_img
     elif width > height:
         result = Image.new(pil_img.mode, (width, width), background_color)
-        # sample a random between 0 and (width - height) // 2
-        y_start = random.randint((width - height) // 2, (width - height) // 2 + 1)
-        result.paste(pil_img, (0, y_start))
+        result.paste(pil_img, (0, (width - height) // 2))
         return result
     else:
         result = Image.new(pil_img.mode, (height, height), background_color)
-        # sample a random between 0 and (height - width) // 2
-        x_start = random.randint((height - width) // 2, (height - width) // 2 + 1)
-        result.paste(pil_img, (x_start, 0))
+        result.paste(pil_img, ((height - width) // 2, 0))
         return result
 
 
